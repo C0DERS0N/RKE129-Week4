@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&family=WindSong:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(143, 188, 255);
+    overflow: hidden;
+}
+
+.main{
+    border: 1px solid rgb(34, 68, 255);
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid rgb(215, 255, 39);
+    border-radius: 50%;
+}
+
+#lav1{
+    background-color: rgb(255, 70, 64);
+    animation: LavAni1;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes LavAni1{
+    0% {top: -200px;}
+    50%{top: 0px;}
+    100%{top: -200px}
+
+}
+
+#lav2{
+    background-color: rgb(255, 251, 17);
+    animation: LavAni2;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes LavAni2{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#lav3{
+    background-color: rgb(0, 167, 28);
+    animation: LavAni3;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes LavAni3{
+    0%{transform:rotateY(0deg);}
+    100%{transform: rotateY(360deg)};
+}
+
+.AniFoo{
+    text-align: center;
+}
+
+
+.AniBtn{
+    border: 2px solid rgb(39, 79, 255);
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(39, 79, 255);
+    font-size: rem;
+    font-family: 'Song Myung', serif;
+    text-transform: uppercase;
+}
